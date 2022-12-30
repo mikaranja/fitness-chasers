@@ -36,10 +36,11 @@
 			<div>
 				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
 				<ul class="mhn2">
-					{{ partial "social-icon" (dict "papersnest.com" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }<a href="papersnest.com" class="link">Home</a>}
+					{{ partial "social-icon" (<a href="papersnest.com" class="link">Home</a> "link" "#" "svg" "icons-facebook") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") <a href="papersnest.com" class="link">Home</a>}}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram")<a href="papersnest.com" class="link">Home</a> }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo"<a href="papersnest.com" class="link">Home</a>) }}
 				</ul>
 			</div>
 
